@@ -1,4 +1,5 @@
 import UserModel from "../../models/User.js";
+import sendEmail from "../../utils/sendmail.js";
 
 // get all users
 const register = async(req, res)=>{
@@ -20,7 +21,11 @@ const register = async(req, res)=>{
 
             // save to database
             const user = await UserModel.create(req.body);
-            res.status(201).json({user});    
+            res.status(201).json({user});  
+            
+            // send users verification email 
+            sendEmail(email,"TEsting 1,2,3", "REGISTRATION..");
+            
 
         }
 
