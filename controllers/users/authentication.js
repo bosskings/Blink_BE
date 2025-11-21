@@ -1,5 +1,6 @@
 import UserModel from "../../models/User.js";
 import sendEmail from "../../utils/sendmail.js";
+import bcrypt from "bcrypt";
 
 // get all users
 const register = async(req, res)=>{
@@ -19,12 +20,26 @@ const register = async(req, res)=>{
         
         }else{
 
-            // save to database
-            const user = await UserModel.create(req.body);
-            res.status(201).json({user});  
+            // hash password
+            const saltRounds = 10;
+            bcrypt.hash(password, saltRounds, async (err, hash) => {
+                if (err) {
+                    return res.status(500).json({ message: "Error hashing password." });
+                }
+
+                // Save to database with hashed password
+                const userData = { ...req.body, password: hash };
+                try {
+                    const user = await UserModel.create(userData);
+                    res.status(201).json({ message: "success", user });
+
+                    // send users verification email 
+                    sendEmail(email, "Testing 1,2,3", "REGISTRATION..");
+                } catch (dbError) {
+                    res.status(500).json({ message: dbError.message });
+                }
+            });
             
-            // send users verification email 
-            sendEmail(email,"TEsting 1,2,3", "REGISTRATION..");
             
 
         }
