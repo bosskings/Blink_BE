@@ -1,32 +1,33 @@
 import nodemailer from "nodemailer";
 
-const sendEmail =(to, message, title) =>{
+const sendEmail = async (to, message, title) =>{
+    
 
     const transporter = nodemailer.createTransport({
-        // Configuration uses your secure Railway environment variables
-        host: process.env.MAIL_HOST,
+        service: "gmail",        
+        host: "smtp.gmail.com",
         port: 587, // Standard port for secured SMTP
         secure: false, // Use TLS
         auth: {
-            user: "FoodGrabafrica@gmail.com",
-            pass: process.env.MAIL_PASS  // Your service password/API key
+            user: "foodgrabafrica@gmail.com",
+            pass: process.env.EMAIL_PASSWORD 
         }
     });
     
     const mailOptions = {
         from : "FoodGrab Africa <foodgrabafrica@gmail.com>",
         to: to,
-        subject: title,
+        subject:title,
         html: `<p> ${message} </p>`
     };
     
     
-    transporter.sendMail(mailOptions, (err, info)=>{
+    await transporter.sendMail(mailOptions, (err, info)=>{
         if(err){
-            console.log("Error sending email", err);
+            return "Error sending email";
             
         }else{
-            console.log('success',info.messageId );
+            return "success";
     
         }
     });
