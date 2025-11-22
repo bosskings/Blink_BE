@@ -13,6 +13,23 @@ const userSchema = new mongoose.Schema({
         trim: true,
         minlength: [2, 'lastname can not be less than 2 characters']
     },
+
+    tag:{
+        type: String,
+        trim: true,
+        maxlength: [20, 'tag can not be more than 20 characters'],
+        match: [/^[a-zA-Z0-9.\-]+$/, "Invalid tag. Only letters, numbers, '.', and '-' allowed."]
+    },
+
+    bio:{
+        type:String,
+        maxlength:500
+    },
+
+    interests:{
+        type: [String],
+        default: [],
+    },
     
     profilePicture: {
         type: String,
@@ -41,6 +58,11 @@ const userSchema = new mongoose.Schema({
     emailVerificationStatus: {
         type: String,
         default: 'PENDING',
+    },
+
+    phoneVerificationStatus:{
+        type:String,
+        default: "PENDING"
     },
     
     defaultGeoLocation: {

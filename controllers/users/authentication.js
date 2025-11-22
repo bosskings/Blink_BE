@@ -2,6 +2,8 @@ import UserModel from "../../models/User.js";
 import sendEmail from "../../utils/sendmail.js";
 import bcrypt from "bcrypt";
 
+
+
 // get all users
 const register = async(req, res)=>{
     try {
@@ -9,12 +11,13 @@ const register = async(req, res)=>{
         let {email, password, phone} = req.body;
         
         if (!email || !password || !phone) {
-            return res.status(400).json({
+            return res.status(400).json({ status:"error",
                 message: "Email, password, and phone are required."
             });
 
         }else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             return res.status(400).json({
+                status:"error",
                 message: "Please provide a valid email address."
             });
         
@@ -24,36 +27,191 @@ const register = async(req, res)=>{
             const saltRounds = 10;
             bcrypt.hash(password, saltRounds, async (err, hash) => {
                 if (err) {
-                    return res.status(500).json({ message: "Error hashing password." });
+                    return res.status(500).json({ status:"error", message: "Error hashing password." });
                 }
 
                 // Save to database with hashed password
                 const userData = { ...req.body, password: hash };
                 try {
                     const user = await UserModel.create(userData);
-                    res.status(201).json({ message: "success", user });
+                    res.status(201).json({ status: "success", user });
 
                     // send users verification email 
-                    sendEmail(email, "Testing 1,2,3", "REGISTRATION..");
+                    sendEmail(email, "Welcome to Blink Africa, your account has been created successfully", "WELCOME TO BLINK");
                 } catch (dbError) {
-                    res.status(500).json({ message: dbError.message });
+                    res.status(500).json({ status:"error", message: dbError.message });
                 }
             });
-            
-            
-
         }
-
-        
     } catch (error) {
         res.status(500).json({message:error.message});    
     }
 }
 
+
+
+
+
 // confirm email
-const confirmEmail = (req, res) => {
-    res.send('confirm email')
+const sendEmailCode = async(req, res) => {
+
+    // Create 4 random digits
+    const code = Math.floor(1000 + Math.random() * 9000);
+    const email = req.body.email;
+
+    if(!email){
+        return res.status(500).json({ status:"error", message:"email is needed" })
+    }
+
+    try {
+        await sendEmail(email, code, "EMAIL VERIFICATION");
+
+        await UserModel.updateOne(
+            { email: email },
+            { $set: { emailVerificationStatus: code.toString() } }
+        );
+
+        res.status(201).json({ status: "success", code });
+    } catch (error) {
+        res.status(500).json({ status: "error", message: error.message });
+    }
+    return;
+
 }
+
+
+
+
+
+// verify email code
+const verifyEmailCode = async (req, res) => {
+
+    const { email, code: inputCode } = req.body;
+
+    if (!email || !inputCode) {
+        return res.status(400).json({ status:"error", message: "Email and code are required" });
+    }
+
+    // check if the inputted code is a match
+    let user = await UserModel.findOne({ email: email });
+    if (!user) {
+        return res.status(404).json({ status: "error", message: "User not found" });
+    }
+    if (user.emailVerificationStatus !== inputCode.toString()) {
+        return res.status(400).json({ status: "error", message: "Wrong code" });
+
+    }else{
+        // If code matches, set emailVerificationStatus to "VERIFIED"
+        user = await UserModel.updateOne(
+            { email: email }, 
+            { $set: { emailVerificationStatus: "VERIFIED" } },
+            { new: true }
+        );
+        return res.status(200).json({ status:"success", user });
+    }
+
+    
+}
+
+
+
+
+
+
+// pseudo send user OTP to phone number for verification
+const sendPhoneCode = async(req, res)=>{
+    const {phone} = req.body;
+
+    if(!phone){
+        return res.status(500).json({
+            status:"error", 
+            message:"Phone is required"
+        })
+    }
+
+    return res.status(201).json({status:"success", code:"0000"});
+}
+
+
+
+
+
+//pseudo confirm phone number using twillo
+const verifyPhoneCode = async(req, res)=>{
+
+    // for now, use 0000 as default verification code
+    const { phone, code } = req.body;
+
+    if (!phone || !code) {
+        return res.status(400).json({ 
+            status: "error", 
+            message: "Phone and code are required" 
+        });
+    }
+
+    let user = await UserModel.findOne({ phone: phone });
+    if (!user) {
+        return res.status(404).json({ status: "error", message: "User not found" });
+    }
+
+    if (code.toString() !== "0000") {
+        return res.status(400).json({ status: "error", message: "Wrong code" });
+    }
+
+    user = await UserModel.findOneAndUpdate(
+        { phone: phone },
+        { $set: { phoneVerificationStatus: "VERIFIED" } },
+        { new: true }
+    );
+
+    return res.status(200).json({ status: "success", user });
+}
+
+
+
+
+
+// function to collect remaining user details and save
+const aboutUser = async (req, res)=>{
+
+    const {email, tag, bio, interests } = req.body;
+
+    // Validate tag
+    if (typeof tag !== 'string' || tag.length > 20 || !/^[a-zA-Z0-9.\-]+$/.test(tag)) {
+        return res.status(400).json({ 
+            status: "error", 
+            message: "Invalid tag. Max 20 chars, only letters, numbers, '.', and '-' allowed." 
+        });
+    }
+
+    // Validate bio
+    if (typeof bio !== 'string' || bio.length > 100) {
+        return res.status(400).json({ status: "error", message: "Bio must be a string of max 100 characters." });
+    }
+
+    // Validate interests
+    if (!Array.isArray(interests)) {
+        return res.status(400).json({ status: "error", message: "Interests must be an array." });
+    }
+
+    const user = await UserModel.findOne({ email });
+    if (!user) {
+        return res.status(404).json({ status: "error", message: "User not found." });
+    }
+
+    // Save extra fields to user
+    user.tag = tag;
+    user.bio = bio;
+    user.interests = interests;
+    await user.save();
+
+    return res.status(200).json({ status: "success", user });
+
+}
+
+
+
+
 
 // forgot password
 const forgotPassword = (req, res) => {
@@ -70,7 +228,11 @@ const login = (req, res) => {
 
 export {
     register,
-    confirmEmail,
+    sendEmailCode,
+    sendPhoneCode,
+    verifyEmailCode,
+    verifyPhoneCode,
+    aboutUser,
     forgotPassword,
     login,
 }

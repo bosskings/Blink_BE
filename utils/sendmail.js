@@ -15,7 +15,7 @@ const sendEmail = async (to, message, title) =>{
     });
     
     const mailOptions = {
-        from : "FoodGrab Africa <foodgrabafrica@gmail.com>",
+        from : "Blink Africa ",
         to: to,
         subject:title,
         html: `<p> ${message} </p>`
