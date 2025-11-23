@@ -5,7 +5,7 @@ import {
     verifyEmailCode, 
     sendPhoneCode,
     verifyPhoneCode,
-    aboutUser,
+    updateUsersDetails,
     forgotPassword, 
     login
 } from "../controllers/users/authentication.js";
@@ -17,7 +17,7 @@ router.patch('/sendEmailCode', sendEmailCode);
 router.patch('/verifyEmailCode', verifyEmailCode);
 router.patch('/sendPhoneCode', sendPhoneCode);
 router.patch('/verifyPhoneCode', verifyPhoneCode);
-router.patch('/aboutUser', aboutUser)
+router.patch('/updateUsersDetails', updateUsersDetails)
 router.post('/forgotPassword', forgotPassword);
 router.post('/login', login);
 

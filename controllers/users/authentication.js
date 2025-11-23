@@ -172,7 +172,7 @@ const verifyPhoneCode = async(req, res)=>{
 
 
 // function to collect remaining user details and save
-const aboutUser = async (req, res)=>{
+const updateUsersDetails = async (req, res)=>{
 
     const {email, tag, bio, interests } = req.body;
 
@@ -232,7 +232,7 @@ export {
     sendPhoneCode,
     verifyEmailCode,
     verifyPhoneCode,
-    aboutUser,
+    updateUsersDetails,
     forgotPassword,
     login,
 }
