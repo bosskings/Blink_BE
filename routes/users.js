@@ -18,8 +18,8 @@ router.patch('/verifyEmailCode', verifyEmailCode);
 router.patch('/sendPhoneCode', sendPhoneCode);
 router.patch('/verifyPhoneCode', verifyPhoneCode);
 router.patch('/updateUsersDetails', updateUsersDetails)
-router.post('/forgotPassword', forgotPassword);
 router.post('/login', login);
+router.post('/forgotPassword', forgotPassword);
 
 
 export default router;

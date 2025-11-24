@@ -1,3 +1,4 @@
+import jwt from "jsonwebtoken";
 import UserModel from "../../models/User.js";
 import sendEmail from "../../utils/sendmail.js";
 import bcrypt from "bcrypt";
@@ -11,13 +12,13 @@ const register = async(req, res)=>{
         let {email, password, phone} = req.body;
         
         if (!email || !password || !phone) {
-            return res.status(400).json({ status:"error",
+            return res.status(400).json({ status:"FAILED",
                 message: "Email, password, and phone are required."
             });
 
         }else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             return res.status(400).json({
-                status:"error",
+                status:"FAILED",
                 message: "Please provide a valid email address."
             });
         
@@ -27,7 +28,7 @@ const register = async(req, res)=>{
             const saltRounds = 10;
             bcrypt.hash(password, saltRounds, async (err, hash) => {
                 if (err) {
-                    return res.status(500).json({ status:"error", message: "Error hashing password." });
+                    return res.status(500).json({ status:"FAILED", message: "Error hashing password." });
                 }
 
                 // Save to database with hashed password
@@ -39,7 +40,7 @@ const register = async(req, res)=>{
                     // send users verification email 
                     sendEmail(email, "Welcome to Blink Africa, your account has been created successfully", "WELCOME TO BLINK");
                 } catch (dbError) {
-                    res.status(500).json({ status:"error", message: dbError.message });
+                    res.status(500).json({ status:"FAILED", message: dbError.message });
                 }
             });
         }
@@ -60,7 +61,7 @@ const sendEmailCode = async(req, res) => {
     const email = req.body.email;
 
     if(!email){
-        return res.status(500).json({ status:"error", message:"email is needed" })
+        return res.status(500).json({ status:"FAILED", message:"email is needed" })
     }
 
     try {
@@ -89,7 +90,7 @@ const verifyEmailCode = async (req, res) => {
     const { email, code: inputCode } = req.body;
 
     if (!email || !inputCode) {
-        return res.status(400).json({ status:"error", message: "Email and code are required" });
+        return res.status(400).json({ status:"FAILED", message: "Email and code are required" });
     }
 
     // check if the inputted code is a match
@@ -107,7 +108,7 @@ const verifyEmailCode = async (req, res) => {
             { $set: { emailVerificationStatus: "VERIFIED" } },
             { new: true }
         );
-        return res.status(200).json({ status:"success", user });
+        return res.status(200).json({ status:"SUCCESS", user });
     }
 
     
@@ -124,12 +125,12 @@ const sendPhoneCode = async(req, res)=>{
 
     if(!phone){
         return res.status(500).json({
-            status:"error", 
+            status:"FAILED", 
             message:"Phone is required"
         })
     }
 
-    return res.status(201).json({status:"success", code:"0000"});
+    return res.status(201).json({status:"SUCCESS", code:"0000"});
 }
 
 
@@ -211,6 +212,61 @@ const updateUsersDetails = async (req, res)=>{
 
 
 
+// login
+const login = async (req, res) => {
+    try {
+        
+        // get user inputs
+        const {email, password} = req.body;
+    
+        // check availability of inputs
+        if(!email && !password){
+            throw new Error("all inputs required")
+        }
+    
+        // check if users with inputted details exists in DB
+        
+        const user = await UserModel.findOne({ email});
+        
+        // check user exists with email
+        if(!user){
+            throw new Error("Wrong login detail_E")
+        }
+    
+        if(!user.emailVerificationStatus == "VERIFIED"){
+            throw new Error("Your Email is not yet verified")
+        }
+    
+        // compare password
+        const compare = await bcrypt.compare(password, user.password);
+        
+        if (!compare ) {
+            throw new Error("Wrong login detail_P")
+        } 
+    
+        // tokenize user id
+        const token = jwt.sign({ user }, process.env.JWT_SECRET, { expiresIn: '36500d' }
+        );
+    
+        return res.header('AUTH_TOKEN', token).status(200).json({
+            status:"SUCCESS",
+            token,
+            data:user
+        })
+
+    } catch (error) {
+
+        return res.status(500).json({
+            status:"FAILED", 
+            message:"an error occurred: "+error
+        })
+        
+    }
+
+
+
+
+}
 
 
 // forgot password
@@ -218,10 +274,6 @@ const forgotPassword = (req, res) => {
     res.send('forgot password')
 }
 
-// login
-const login = (req, res) => {
-    res.send(' log in')    
-}
 
 
 
