@@ -1,0 +1,1817 @@
+[
+    {
+        "name": "University of Lagos (UNILAG)",
+        "city": "Lagos",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.385,
+                6.5167
+            ]
+        }
+    },
+    {
+        "name": "University of Ibadan (UI)",
+        "city": "Ibadan",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.9167,
+                7.3912
+            ]
+        }
+    },
+    {
+        "name": "University of Port Harcourt",
+        "city": "Port Harcourt",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.062,
+                4.8433
+            ]
+        }
+    },
+    {
+        "name": "Covenant University",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.1243,
+                6.6728
+            ]
+        }
+    },
+    {
+        "name": "University of Nigeria, Nsukka (UNN)",
+        "city": "Nsukka",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.3989,
+                6.86
+            ]
+        }
+    },
+    {
+        "name": "Obafemi Awolowo University (OAU)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.5303,
+                7.5208
+            ]
+        }
+    },
+    {
+        "name": "Ahmadu Bello University (ABU)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.7,
+                11.0667
+            ]
+        }
+    },
+    {
+        "name": "Federal University, Oye-Ekiti (FUOYE)",
+        "city": "Ado-Ekiti",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.2333,
+                7.7833
+            ]
+        }
+    },
+    {
+        "name": "University of Benin (UNIBEN)",
+        "city": "Benin City",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.6001,
+                6.3337
+            ]
+        }
+    },
+    {
+        "name": "Olabisi Onabanjo University (OOU)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.6633,
+                6.8626
+            ]
+        }
+    },
+    {
+        "name": "Lagos State University (LASU)",
+        "city": "Lagos",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.245,
+                6.5067
+            ]
+        }
+    },
+    {
+        "name": "University of Ilorin (UNILORIN)",
+        "city": "Ilorin",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.55,
+                8.5
+            ]
+        }
+    },
+    {
+        "name": "Federal University of Technology, Akure (FUTA)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.1958,
+                7.2578
+            ]
+        }
+    },
+    {
+        "name": "Babcock University",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.4754,
+                6.8686
+            ]
+        }
+    },
+    {
+        "name": "University of Abuja",
+        "city": "Abuja",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.4896,
+                9.0658
+            ]
+        }
+    },
+    {
+        "name": "Federal University of Agriculture, Abeokuta (FUNAAB)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.4363,
+                7.2244
+            ]
+        }
+    },
+    {
+        "name": "Afe Babalola University (ABUAD)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.22,
+                7.67
+            ]
+        }
+    },
+    {
+        "name": "Ladoke Akintola University of Technology (LAUTECH)",
+        "city": "Ado-Ekiti",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.13,
+                7.44
+            ]
+        }
+    },
+    {
+        "name": "Alex Ekwueme Federal University, Ndufu-Alike Ikwo (AE-FUNAI)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.7048,
+                5.626
+            ]
+        }
+    },
+    {
+        "name": "Federal University of Technology, Minna (FUTMINNA)",
+        "city": "Minna",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.5561,
+                9.6198
+            ]
+        }
+    },
+    {
+        "name": "Rivers State University (RSU)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.9746,
+                4.8472
+            ]
+        }
+    },
+    {
+        "name": "Adamawa State University, Mubi",
+        "city": "Mubi",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                13.2674,
+                10.2674
+            ]
+        }
+    },
+    {
+        "name": "University of Jos",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.8583,
+                9.8965
+            ]
+        }
+    },
+    {
+        "name": "Ekiti State University, Ado-Ekiti (EKSU)",
+        "city": "Ado-Ekiti",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.2209,
+                7.6258
+            ]
+        }
+    },
+    {
+        "name": "Godfrey Okoye University",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.0711,
+                6.186
+            ]
+        }
+    },
+    {
+        "name": "Adekunle Ajasin University, Akungba Akoko",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.7354,
+                7.4769
+            ]
+        }
+    },
+    {
+        "name": "Nile University of Nigeria",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.5,
+                9
+            ]
+        }
+    },
+    {
+        "name": "Thomas Adewumi University",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.95,
+                7.8
+            ]
+        }
+    },
+    {
+        "name": "Federal University, Lokoja",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.7333,
+                7.8
+            ]
+        }
+    },
+    {
+        "name": "Federal University, Lafia",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.5164,
+                8.4911
+            ]
+        }
+    },
+    {
+        "name": "Federal University, Lokoja",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.7333,
+                7.8
+            ]
+        }
+    },
+    {
+        "name": "Federal University, Lafia",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.5164,
+                8.4911
+            ]
+        }
+    },
+    {
+        "name": "Kwara State University (KWASU)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.5424,
+                8.4928
+            ]
+        }
+    },
+    {
+        "name": "Landmark University",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.1581,
+                7.2265
+            ]
+        }
+    },
+    {
+        "name": "Federal University of Technology, Owerri (FUTO)",
+        "city": "Owerri",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.0446,
+                5.4885
+            ]
+        }
+    },
+    {
+        "name": "Edo State University, Uzairue",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.2492,
+                6.6789
+            ]
+        }
+    },
+    {
+        "name": "Delta State University, Abraka",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.1156,
+                6.2708
+            ]
+        }
+    },
+    {
+        "name": "Redeemer’s University",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.2399,
+                7.5951
+            ]
+        }
+    },
+    {
+        "name": "Pan-Atlantic University",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.3916,
+                6.4542
+            ]
+        }
+    },
+    {
+        "name": "Osun State University",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.5414,
+                7.7648
+            ]
+        }
+    },
+    {
+        "name": "University of Calabar (UNICAL)",
+        "city": "Calabar",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.3408,
+                4.9524
+            ]
+        }
+    },
+    {
+        "name": "University of Maiduguri (UNIMAID)",
+        "city": "Maiduguri",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                13.1606,
+                11.847
+            ]
+        }
+    },
+    {
+        "name": "Bayero University Kano (BUK)",
+        "city": "Kano",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.5167,
+                12
+            ]
+        }
+    },
+    {
+        "name": "Usmanu Danfodiyo University, Sokoto (UDUS)",
+        "city": "Sokoto",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.243,
+                13.06
+            ]
+        }
+    },
+    {
+        "name": "University of Port Harcourt (UNIPORT)",
+        "city": "Port Harcourt",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.062,
+                4.8433
+            ]
+        }
+    },
+    {
+        "name": "University of Jos (UNIJOS)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.8583,
+                9.8965
+            ]
+        }
+    },
+    {
+        "name": "University of Ilorin (UNILORIN)",
+        "city": "Ilorin",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.55,
+                8.5
+            ]
+        }
+    },
+    {
+        "name": "Nigerian Defence Academy (NDA) – Kaduna",
+        "city": "Kaduna",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.4604,
+                10.4636
+            ]
+        }
+    },
+    {
+        "name": "Michael Okpara University of Agriculture, Umudike (MOUAU)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.4292,
+                5.5244
+            ]
+        }
+    },
+    {
+        "name": "Imo State University (IMSU)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.0333,
+                5.5
+            ]
+        }
+    },
+    {
+        "name": "Abubakar Tafawa Balewa University (ATBU), Bauchi",
+        "city": "Bauchi",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                9.8442,
+                10.3317
+            ]
+        }
+    },
+    {
+        "name": "Bingham University",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.8178,
+                8.9833
+            ]
+        }
+    },
+    {
+        "name": "Ibrahim Badamasi Babangida University (I.B.B.U), Lapai",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.0333,
+                9.0833
+            ]
+        }
+    },
+    {
+        "name": "Federal University Dutse (FUD), Jigawa",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                10.3117,
+                11.7611
+            ]
+        }
+    },
+    {
+        "name": "Federal University Dutsin-Ma (FUDMA), Katsina",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.4681,
+                12.4094
+            ]
+        }
+    },
+    {
+        "name": "Benue State University (BSU), Makurdi",
+        "city": "Makurdi",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.5333,
+                7.7333
+            ]
+        }
+    },
+    {
+        "name": "University of Jos Teaching / Associated University",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.8831,
+                9.9238
+            ]
+        }
+    },
+    {
+        "name": "Gregory University (GUU), Uturu",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.353,
+                5.621
+            ]
+        }
+    },
+    {
+        "name": "Ambrose Alli University (AAU), Ekpoma",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.1167,
+                6.7333
+            ]
+        }
+    },
+    {
+        "name": "Anambra State University (UNIZIK Campus etc.)",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.7896,
+                6.2019
+            ]
+        }
+    },
+    {
+        "name": "Adekunle Ajasin University (AAUA), Akungba-Akoko",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.7333,
+                7.4333
+            ]
+        }
+    },
+    {
+        "name": "Ekiti State University (EKSU), Ado-Ekiti",
+        "city": "Ado-Ekiti",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.25,
+                7.7167
+            ]
+        }
+    },
+    {
+        "name": "Kogi State University (KSU), Anyigba",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.1833,
+                7.4833
+            ]
+        }
+    },
+    {
+        "name": "Abia State University (ABSU), Uturu",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.3942,
+                5.8228
+            ]
+        }
+    },
+    {
+        "name": "Nasarawa State University (NSUK), Keffi",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.8736,
+                8.847
+            ]
+        }
+    },
+    {
+        "name": "Kebbi State University of Science and Technology (KSUSTA), Aliero",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.4667,
+                12.2833
+            ]
+        }
+    },
+    {
+        "name": "Osun State Polytechnic, Iree",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.4333,
+                7.55
+            ]
+        }
+    },
+    {
+        "name": "University of Africa, Toru-Orua",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.0833,
+                5.05
+            ]
+        }
+    },
+    {
+        "name": "Akwa Ibom State University (AKSU), Ikot Akpaden",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.719,
+                4.7355
+            ]
+        }
+    },
+    {
+        "name": "Bauchi State University, Gadau (BASUG)",
+        "city": "Bauchi",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                10.1667,
+                12.0833
+            ]
+        }
+    },
+    {
+        "name": "Northwest University (Now YUMSUK), Kano",
+        "city": "Kano",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.5167,
+                12
+            ]
+        }
+    },
+    {
+        "name": "Sokoto State University (SSU), Sokoto",
+        "city": "Sokoto",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.2333,
+                13.0667
+            ]
+        }
+    },
+    {
+        "name": "Adamawa State University (ADSU), Mubi",
+        "city": "Mubi",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                13.267,
+                10.2674
+            ]
+        }
+    },
+    {
+        "name": "Gombe State University (GSU)",
+        "city": "Gombe",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                11.1667,
+                10.2833
+            ]
+        }
+    },
+    {
+        "name": "Kaduna State University (KASU)",
+        "city": "Kaduna",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.4333,
+                10.5167
+            ]
+        }
+    },
+    {
+        "name": "Taraba State University (TSU), Jalingo",
+        "city": "Jalingo",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                11.3667,
+                8.9
+            ]
+        }
+    },
+    {
+        "name": "Plateau State University (PLASU), Bokkos",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.9833,
+                9.3
+            ]
+        }
+    },
+    {
+        "name": "Umaru Musa Yar’adua University (UMYU), Katsina",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.6018,
+                12.9908
+            ]
+        }
+    },
+    {
+        "name": "Enugu State University of Science & Technology (ESUT)",
+        "city": "Enugu",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.5103,
+                6.4584
+            ]
+        }
+    },
+    {
+        "name": "Cross River University of Technology (CRUTECH), Calabar",
+        "city": "Calabar",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.3269,
+                4.9608
+            ]
+        }
+    },
+    {
+        "name": "Bells University of Technology, Ota",
+        "city": "Ota",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.1178,
+                6.7028
+            ]
+        }
+    },
+    {
+        "name": "Bingham University, Karu",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.8178,
+                8.9833
+            ]
+        }
+    },
+    {
+        "name": "Bowen University, Iwo",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.1833,
+                7.6333
+            ]
+        }
+    },
+    {
+        "name": "Caleb University, Lagos",
+        "city": "Lagos",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.3433,
+                6.595
+            ]
+        }
+    },
+    {
+        "name": "Caritas University, Enugu",
+        "city": "Enugu",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.51,
+                6.43
+            ]
+        }
+    },
+    {
+        "name": "Covenant University, Ota",
+        "city": "Ota",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.1243,
+                6.6728
+            ]
+        }
+    },
+    {
+        "name": "Crawford University, Igbesa",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.4311,
+                6.7286
+            ]
+        }
+    },
+    {
+        "name": "Delta State University, Abraka",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.1156,
+                6.2708
+            ]
+        }
+    },
+    {
+        "name": "Dominion University, Ibadan",
+        "city": "Ibadan",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.947,
+                7.3775
+            ]
+        }
+    },
+    {
+        "name": "Eastern Palm University, Ogboko",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6,
+                5.5
+            ]
+        }
+    },
+    {
+        "name": "Ebonyi State University, Abakaliki",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.1122,
+                6.3247
+            ]
+        }
+    },
+    {
+        "name": "Edo State University, Uzairue",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.2492,
+                6.6789
+            ]
+        }
+    },
+    {
+        "name": "Ekiti State University, Ado-Ekiti",
+        "city": "Ado-Ekiti",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.25,
+                7.7167
+            ]
+        }
+    },
+    {
+        "name": "Elizade University, Ilara-Mokin",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.5667,
+                7.2333
+            ]
+        }
+    },
+    {
+        "name": "Evangel University, Akaeze",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.099,
+                6.991
+            ]
+        }
+    },
+    {
+        "name": "Federal University Dutse, Jigawa",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                10.3117,
+                11.7611
+            ]
+        }
+    },
+    {
+        "name": "Federal University Dutsin-Ma, Katsina",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.4681,
+                12.4094
+            ]
+        }
+    },
+    {
+        "name": "Federal University Gusau, Zamfara",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.6667,
+                12.167
+            ]
+        }
+    },
+    {
+        "name": "Federal University Kashere, Gombe",
+        "city": "Gombe",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                11.1667,
+                10.2
+            ]
+        }
+    },
+    {
+        "name": "Federal University Lafia, Nasarawa",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.5164,
+                8.4911
+            ]
+        }
+    },
+    {
+        "name": "Federal University Lokoja, Kogi",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.7333,
+                7.8
+            ]
+        }
+    },
+    {
+        "name": "Federal University Ndufu-Alike Ikwo, Ebonyi",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.7048,
+                5.626
+            ]
+        }
+    },
+    {
+        "name": "Federal University of Agriculture, Abeokuta",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.4363,
+                7.2244
+            ]
+        }
+    },
+    {
+        "name": "Federal University of Agriculture, Makurdi",
+        "city": "Makurdi",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.5333,
+                7.7333
+            ]
+        }
+    },
+    {
+        "name": "Federal University of Petroleum Resources, Effurun",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.75,
+                5.52
+            ]
+        }
+    },
+    {
+        "name": "Federal University of Technology, Akure",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.1958,
+                7.2578
+            ]
+        }
+    },
+    {
+        "name": "Federal University of Technology, Minna",
+        "city": "Minna",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.5561,
+                9.6198
+            ]
+        }
+    },
+    {
+        "name": "Federal University of Technology, Owerri",
+        "city": "Owerri",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.0446,
+                5.4885
+            ]
+        }
+    },
+    {
+        "name": "Federal University Otuoke, Bayelsa",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.2725,
+                4.9456
+            ]
+        }
+    },
+    {
+        "name": "Federal University Wukari, Taraba",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                9.7833,
+                7.867
+            ]
+        }
+    },
+    {
+        "name": "Fountain University, Osogbo",
+        "city": "Osogbo",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.55,
+                7.7833
+            ]
+        }
+    },
+    {
+        "name": "Gombe State University, Gombe",
+        "city": "Gombe",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                11.1667,
+                10.2833
+            ]
+        }
+    },
+    {
+        "name": "Godfrey Okoye University, Enugu",
+        "city": "Enugu",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.0711,
+                6.186
+            ]
+        }
+    },
+    {
+        "name": "Gregory University, Uturu",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.353,
+                5.621
+            ]
+        }
+    },
+    {
+        "name": "Ibrahim Badamasi Babangida University, Lapai",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.0333,
+                9.0833
+            ]
+        }
+    },
+    {
+        "name": "Igbinedion University, Okada",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.931,
+                6.728
+            ]
+        }
+    },
+    {
+        "name": "Ignatius Ajuru University of Education, Port Harcourt",
+        "city": "Port Harcourt",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.967,
+                4.853
+            ]
+        }
+    },
+    {
+        "name": "Imo State University, Owerri",
+        "city": "Owerri",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.0333,
+                5.5
+            ]
+        }
+    },
+    {
+        "name": "Joseph Ayo Babalola University, Ikeji-Arakeji",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.7833,
+                7.8833
+            ]
+        }
+    },
+    {
+        "name": "Kaduna State University, Kaduna",
+        "city": "Kaduna",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.4333,
+                10.5167
+            ]
+        }
+    },
+    {
+        "name": "Kano University of Science and Technology, Wudil",
+        "city": "Kano",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.2667,
+                11.9333
+            ]
+        }
+    },
+    {
+        "name": "Kebbi State University of Science and Technology, Aliero",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.4667,
+                12.2833
+            ]
+        }
+    },
+    {
+        "name": "Kings University, Ode-Omu",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.4167,
+                7.55
+            ]
+        }
+    },
+    {
+        "name": "Kogi State University, Anyigba",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.1833,
+                7.4833
+            ]
+        }
+    },
+    {
+        "name": "Kwara State University, Malete",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.5424,
+                8.4928
+            ]
+        }
+    },
+    {
+        "name": "Ladoke Akintola University of Technology, Ogbomoso",
+        "city": "Ado-Ekiti",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.13,
+                7.44
+            ]
+        }
+    },
+    {
+        "name": "Lagos State University, Ojo",
+        "city": "Lagos",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.245,
+                6.5067
+            ]
+        }
+    },
+    {
+        "name": "Landmark University, Omu-Aran",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.1581,
+                7.2265
+            ]
+        }
+    },
+    {
+        "name": "Lead City University, Ibadan",
+        "city": "Ibadan",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.909,
+                7.392
+            ]
+        }
+    },
+    {
+        "name": "Madonna University, Okija",
+        "city": "Ado-Ekiti",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.901,
+                6.184
+            ]
+        }
+    },
+    {
+        "name": "Michael Okpara University of Agriculture, Umudike",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.4292,
+                5.5244
+            ]
+        }
+    },
+    {
+        "name": "Modibbo Adama University of Technology, Yola",
+        "city": "Yola",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                12.451,
+                9.208
+            ]
+        }
+    },
+    {
+        "name": "Mountain Top University, Makogi",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.8,
+                7.2
+            ]
+        }
+    },
+    {
+        "name": "Nasarawa State University, Keffi",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.8736,
+                8.847
+            ]
+        }
+    },
+    {
+        "name": "National Open University of Nigeria, Abuja",
+        "city": "Abuja",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.5333,
+                9.0833
+            ]
+        }
+    },
+    {
+        "name": "Niger Delta University, Amassoma",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.1017,
+                4.9775
+            ]
+        }
+    },
+    {
+        "name": "Nigerian Defence Academy, Kaduna",
+        "city": "Kaduna",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.4604,
+                10.4636
+            ]
+        }
+    },
+    {
+        "name": "Nile University of Nigeria, Abuja",
+        "city": "Abuja",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.5,
+                9
+            ]
+        }
+    },
+    {
+        "name": "Nnamdi Azikiwe University, Awka",
+        "city": "Awka",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.073,
+                6.206
+            ]
+        }
+    },
+    {
+        "name": "Obafemi Awolowo University, Ile-Ife",
+        "city": "Ile-Ife",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.5303,
+                7.5208
+            ]
+        }
+    },
+    {
+        "name": "Obong University, Obong Ntak",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.93,
+                5.07
+            ]
+        }
+    },
+    {
+        "name": "Olabisi Onabanjo University, Ago-Iwoye",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.6633,
+                6.8626
+            ]
+        }
+    },
+    {
+        "name": "Ondo State University of Science and Technology, Okitipupa",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.9167,
+                6.6833
+            ]
+        }
+    },
+    {
+        "name": "Osun State University, Osogbo",
+        "city": "Osogbo",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.5414,
+                7.7648
+            ]
+        }
+    },
+    {
+        "name": "Pan-Atlantic University, Lagos",
+        "city": "Lagos",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.3916,
+                6.4542
+            ]
+        }
+    },
+    {
+        "name": "Paul University, Awka",
+        "city": "Awka",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.7896,
+                6.2019
+            ]
+        }
+    },
+    {
+        "name": "Plateau State University, Bokkos",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.9833,
+                9.3
+            ]
+        }
+    },
+    {
+        "name": "Redeemer's University, Mowe",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.2399,
+                7.5951
+            ]
+        }
+    },
+    {
+        "name": "Renaissance University, Enugu",
+        "city": "Enugu",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.5,
+                6.42
+            ]
+        }
+    },
+    {
+        "name": "Rhema University, Aba",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.3667,
+                5.1167
+            ]
+        }
+    },
+    {
+        "name": "Ritman University, Ikot Ekpene",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.684,
+                5.145
+            ]
+        }
+    },
+    {
+        "name": "Rivers State University, Port Harcourt",
+        "city": "Port Harcourt",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.9746,
+                4.8472
+            ]
+        }
+    },
+    {
+        "name": "Salem University, Lokoja",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                6.7333,
+                7.8
+            ]
+        }
+    },
+    {
+        "name": "Skyline University, Kano",
+        "city": "Kano",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                8.5167,
+                12
+            ]
+        }
+    },
+    {
+        "name": "Sokoto State University, Sokoto",
+        "city": "Sokoto",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.2333,
+                13.0667
+            ]
+        }
+    },
+    {
+        "name": "Southwestern University, Okun-Owa",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.4167,
+                7.55
+            ]
+        }
+    },
+    {
+        "name": "Spiritan University, Nneochi",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.55,
+                5.1
+            ]
+        }
+    },
+    {
+        "name": "Summit University, Offa",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                4.95,
+                8.15
+            ]
+        }
+    },
+    {
+        "name": "Tai Solarin University of Education, Ijebu-Ode",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                3.917,
+                6.836
+            ]
+        }
+    },
+    {
+        "name": "Taraba State University, Jalingo",
+        "city": "Jalingo",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                11.3667,
+                8.9
+            ]
+        }
+    },
+    {
+        "name": "Tansian University, Umunya",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.2,
+                6
+            ]
+        }
+    },
+    {
+        "name": "Umaru Musa Yar’adua University, Katsina",
+        "city": "Unknown",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.6018,
+                12.9908
+            ]
+        }
+    },
+    {
+        "name": "University of Abuja, Abuja",
+        "city": "Abuja",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.4896,
+                9.0658
+            ]
+        }
+    },
+    {
+        "name": "University of Uyo, Uyo",
+        "city": "Uyo",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                7.9227,
+                5.0449
+            ]
+        }
+    },
+    {
+        "name": "Usmanu Danfodiyo University, Sokoto",
+        "city": "Sokoto",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                5.243,
+                13.06
+            ]
+        }
+    }
+]
