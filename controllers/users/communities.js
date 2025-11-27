@@ -78,7 +78,7 @@ const communitiesNear = async (req, res)=>{
 
 const selectCommunities = async (req, res) => {
     try {
-        const userId = req.body.user._id;
+        const userId = req.body.user_id;
         const { selectedCommunities } = req.body; // Array of community _ids
 
         if (!userId) {
