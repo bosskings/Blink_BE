@@ -1,5 +1,9 @@
 import express from 'express';
-import {communitiesNear} from '../controllers/users/communities.js';
+import {
+    communitiesNear, 
+    selectCommunities
+} from '../controllers/users/communities.js';
+
 import {
     register, 
     sendEmailCode, 
@@ -22,7 +26,7 @@ router.patch('/updateUsersDetails', updateUsersDetails);
 
 //route to display current communities within a given range of the users current location
 router.get('/communitiesNear', communitiesNear)
-// router.post('/choseCommunity', choseCommunity);
+router.post('/selectCommunities', selectCommunities);
 
 
 router.post('/login', login);

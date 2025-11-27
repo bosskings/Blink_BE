@@ -84,6 +84,11 @@ const userSchema = new mongoose.Schema({
             type: [Number],
         },
     },
+
+    communities: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Community',
+    }],
     
     password: {
         type: String,

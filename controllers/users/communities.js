@@ -1,4 +1,5 @@
 import CommunityModel from "../../models/Community.js";
+import UserModel from "../../models/User.js";
 
 const communitiesNear = async (req, res)=>{
 
@@ -35,7 +36,7 @@ const communitiesNear = async (req, res)=>{
             {
                 // $project: Format the output data
                 $project: {
-                    _id: 0,
+                    _id: 1,
                     name: 1,
                     city: 1,
                     // Convert meters to kilometers for easy display on the frontend
@@ -75,6 +76,51 @@ const communitiesNear = async (req, res)=>{
 
 
 
+const selectCommunities = async (req, res) => {
+    try {
+        const userId = req.body.user._id;
+        const { selectedCommunities } = req.body; // Array of community _ids
+
+        if (!userId) {
+            
+            throw new Error("User ID not provided");
+            
+        }
+
+        if (!Array.isArray(selectedCommunities) || selectedCommunities.length === 0) {
+            
+            throw new Error("No communities selected");
+            
+        }
+
+        // Find user
+        const user = await UserModel.findById(userId);
+        if (!user) {
+            
+            throw new Error("User not found");
+            
+        }
+
+        // Store selected communities' _ids
+        user.communities = selectedCommunities;
+        await user.save();
+
+        return res.status(200).json({
+            status: "SUCCESS",
+            data: user.communities
+        });
+
+    } catch (error) {
+        return res.status(500).json({
+            status: "FAILED",
+            message: "an error occurred: " + error
+        });
+    }
+}
+
+
+
+
 
 
 
@@ -84,5 +130,6 @@ const communitiesNear = async (req, res)=>{
 
 
 export {
-    communitiesNear
+    communitiesNear,
+    selectCommunities
 };
