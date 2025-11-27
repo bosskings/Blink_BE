@@ -1,4 +1,5 @@
 import express from 'express';
+import choseCommunity from '../controllers/users/choseCommunity.js';
 import {
     register, 
     sendEmailCode, 
@@ -17,7 +18,8 @@ router.patch('/sendEmailCode', sendEmailCode);
 router.patch('/verifyEmailCode', verifyEmailCode);
 router.patch('/sendPhoneCode', sendPhoneCode);
 router.patch('/verifyPhoneCode', verifyPhoneCode);
-router.patch('/updateUsersDetails', updateUsersDetails)
+router.patch('/updateUsersDetails', updateUsersDetails);
+router.post('/choseCommunity', choseCommunity);
 router.post('/login', login);
 router.post('/forgotPassword', forgotPassword);
 
