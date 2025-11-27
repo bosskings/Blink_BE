@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-const sendEmail = async (to, message, title) =>{
+const sendEmail = async(to, message, title) =>{
     
 
     const transporter = nodemailer.createTransport({
@@ -9,7 +9,7 @@ const sendEmail = async (to, message, title) =>{
         port: 587, // Standard port for secured SMTP
         secure: false, // Use TLS
         auth: {
-            user: "foodgrabafrica@gmail.com",
+            user: "blinkishyper@gmail.com",
             pass: process.env.EMAIL_PASSWORD 
         }
     });
@@ -22,7 +22,7 @@ const sendEmail = async (to, message, title) =>{
     };
     
     
-    await transporter.sendMail(mailOptions, (err, info)=>{
+    transporter.sendMail(mailOptions, (err, info)=>{
         if(err){
             return "Error sending email";
             
