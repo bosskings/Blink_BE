@@ -20,7 +20,7 @@ const router = express.Router();
 router.post('/register', register);
 router.patch('/sendEmailCode', sendEmailCode);
 router.patch('/verifyEmailCode', verifyEmailCode);
-router.patch('/sendPhoneCode', sendPhoneCode);
+router.post('/sendPhoneCode', sendPhoneCode);
 router.patch('/verifyPhoneCode', verifyPhoneCode);
 router.patch('/updateUsersDetails', updateUsersDetails);
 

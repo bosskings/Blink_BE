@@ -1,4 +1,5 @@
 import jwt from "jsonwebtoken";
+import twillo from "twilio";
 import UserModel from "../../models/User.js";
 import sendEmail from "../../utils/sendmail.js";
 import bcrypt from "bcrypt";
@@ -123,14 +124,26 @@ const verifyEmailCode = async (req, res) => {
 const sendPhoneCode = async(req, res)=>{
     const {phone} = req.body;
 
-    if(!phone){
-        return res.status(500).json({
-            status:"FAILED", 
-            message:"Phone is required"
-        })
-    }
+    const accountSid = process.env.TWILLO_SID;
+    const authToken = process.env.TWILLO_TOKEN;
+    const client = twillo(accountSid, authToken);
 
-    return res.status(201).json({status:"SUCCESS", code:"0000"});
+    const message = await client.messages.create({
+        body: "Hi there",
+        to: phone,
+        from: "+13089373408",
+    });
+    
+      console.log(message.body);
+
+    // if(!phone){
+    //     return res.status(500).json({
+    //         status:"FAILED", 
+    //         message:"Phone is required"
+    //     })
+    // }
+
+    return res.status(201).json({status:"SUCCESS", data:message.body});
 }
 
 
